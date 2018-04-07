@@ -3,6 +3,7 @@ Recurrent Neural Network model with LSTM node. Predicts when one should buy / se
 
 # Usage
 To run the program, go into the src folder and type the following (using python 3)
+
 $ pip install tensorflow
 $ python ptb_word_lm.py --data_path=../data/ --model=small --num_gpus=0
 
