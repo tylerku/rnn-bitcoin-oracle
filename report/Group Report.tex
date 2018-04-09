@@ -1,0 +1,69 @@
+\documentclass[fleqn,11pt]{article}
+
+\usepackage[letterpaper,margin=0.75in]{geometry}
+
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{float}
+
+\setlength{\parindent}{1.4em}
+
+\begin{document}
+
+\lstset{
+  language=Python,
+  basicstyle=\small,          % print whole listing small
+  keywordstyle=\bfseries,
+  identifierstyle=,           % nothing happens
+  commentstyle=,              % white comments
+  stringstyle=\ttfamily,      % typewriter type for strings
+  showstringspaces=false,     % no special string spaces
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=5pt,
+  frame=tb,
+}
+
+\title{Bitcoin Oracle Report}
+
+\author{Matthew Price, Trevor Rydalch, Tyler Udy, Cole Fox}
+
+\date{10 April, 2018}
+
+\maketitle
+
+\section{ The Task }
+The recent attention that the cryptocurrency market has received has brought attention to one of its key features- the volatility of the market. This volatility makes it extremely difficult to effectively trade cryptocurrency, as anything could happen at any given time. Our task is to use machine learning to learn what we as humans can't and predict the cryptocurrency market, allowing users to consistently buy low and sell high.
+
+\subsection{ Motivation }
+Several members of the team have some experience in crypto trading. Unfortunately, none have found success. 
+
+\subsection{ Discussion }
+One other characteristic that makes trading difficult is the transaction cost of buying/selling. Using several data fields (available via the GDAX api), the task requires learning patterns over time to predict whether a user should buy, hold, or sell. At a high level, this means that a user should buy when prices are predicted to start rising, and sell when the prices are about to turn down AND the profits are greater that the price of the transaction fee.
+
+\section{ The Data }
+
+\subsection{ Gathering }
+
+\subsection{ Features }
+
+\section{ Initial Model }
+
+\subsection{ Description }
+
+\subsection{ Result }
+
+\section{ How It Got Better }
+
+\section{ Final Results }
+
+\subsection{ Explanation }
+
+\subsection{ Training \& Testing }
+
+\section{ Conclusion }
+
+
+\end{document}
