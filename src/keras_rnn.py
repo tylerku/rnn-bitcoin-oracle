@@ -89,6 +89,12 @@ history = model.fit(train_X, train_y, epochs=50, batch_size=72, validation_data=
 pyplot.plot(history.history['loss'], label='train')
 pyplot.plot(history.history['val_loss'], label='test')
 pyplot.legend()
+pyplot.xlabel('Epoch')
+pyplot.ylabel('RMSE')
+pyplot.title('RMSE by Epoch')
+fig = pyplot.figure()
+fig.tight_layout()
+fig.savefig('rnn.png') 
 pyplot.show()
 
 # make a prediction
