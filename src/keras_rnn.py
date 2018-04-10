@@ -1,4 +1,5 @@
 from math import sqrt
+import numpy
 from numpy import concatenate
 from matplotlib import pyplot
 from pandas import read_csv
@@ -31,13 +32,17 @@ def series_to_supervised(data, n_in=1, n_out=1, dropnan=True):
 	agg = concat(cols, axis=1)
 	agg.columns = names
 	# drop rows with NaN values
-	if dropnan:
-		agg.dropna(inplace=True)
+	agg.dropna()
 	return agg
 
 # load dataset
-dataset = read_csv('../bitcoin_data/bitcoin.csv', header=0, index_col=0)
+path = '../bitcoin_data/bitcoin.csv'
+df = read_csv(path, nrows=1) # read just first line for columns
+columns = df.columns.tolist() # get the columns
+cols_to_use = columns[:len(columns)-1] # drop the last one
+dataset = read_csv(path, usecols=cols_to_use)
 values = dataset.values
+values= values[~numpy.isnan(values).any(axis=1)]
 # integer encode direction
 encoder = LabelEncoder()
 values[:,4] = encoder.fit_transform(values[:,4])
@@ -48,8 +53,11 @@ scaler = MinMaxScaler(feature_range=(0, 1))
 scaled = scaler.fit_transform(values)
 # frame as supervised learning
 reframed = series_to_supervised(scaled, 1, 1)
+
+print(reframed.columns)
 # drop columns we don't want to predict
-reframed.drop(reframed.columns[[9,10,11,12,13,14,15]], axis=1, inplace=True)
+reframed.drop(reframed.columns[[8,9,10,11,12,13]], axis=1, inplace=True)
+reframed.drop([0],inplace=True)
 print(reframed.head())
 
 # split into train and test sets
