@@ -37,10 +37,15 @@ def series_to_supervised(data, n_in=1, n_out=1, dropnan=True):
 
 # load dataset
 path = '../bitcoin_data/bitcoin.csv'
-df = read_csv(path, nrows=1) # read just first line for columns
-columns = df.columns.tolist() # get the columns
-cols_to_use = columns[:len(columns)-1] # drop the last one
-dataset = read_csv(path, usecols=cols_to_use)
+headers = ['Timestamp', 'Open', 'High', 'Low', 'Price', 'Volume', '24hr', 'Action']
+none_to_nan = {
+    'None' : numpy.nan
+}
+#df = read_csv(path, nrows=1, header=headers).replace(none_to_nan) # read just first line for columns
+#columns = df.columns.tolist() # get the columns
+#cols_to_use = columns[:len(columns)-1] # drop the last one
+dataset = read_csv(path, names=headers).replace(none_to_nan)
+dataset = dataset.drop('Action', axis=1).convert_objects(convert_numeric=True)
 values = dataset.values
 values= values[~numpy.isnan(values).any(axis=1)]
 # integer encode direction
