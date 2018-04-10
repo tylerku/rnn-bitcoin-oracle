@@ -5,7 +5,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 from sklearn import tree
 
-ITERATIONS = 1000
+ITERATIONS = 500
 
 str_to_int = {
     'buy': 0.0,
@@ -28,8 +28,7 @@ iterations = []
 for i in range(ITERATIONS):
     tr = np.random.rand()
     X_train, X_test, y_train, y_test = train_test_split( X, Y, test_size = tr, random_state = i)
-    if (i == 0):
-        print(X_train[0])
+    
 
     clf_entropy = DecisionTreeClassifier(criterion = "entropy", random_state = i,
     max_depth=3, min_samples_leaf=5)
@@ -44,30 +43,35 @@ for i in range(ITERATIONS):
     testRatios.append(1-tr)
     iterations.append(i)
 
-import matplotlib.pyplot as plt
-import seaborn as sns
-sns.set()
+import graph
+# from graph import GraphResults
 
-plt.plot(iterations, accuracies)
-plt.title("Decision Tree Buy/Hold/Sell Classification Accuracy by Iteration")
-plt.xlabel("Iteration")
-plt.ylabel("Accuracy")
-plt.xlim((-1,len(iterations)+1))
-plt.ylim((min(accuracies) - .03, max(accuracies) + .03))
-plt.show()
+grapher = graph.GraphResults()
 
+grapher.plot(x=iterations, y=accuracies, title="DT Buy/Hold/Sell Classification Accuracy by Iteration", xlabel="Iteration", ylabel="Accuracy")
+grapher.scatter(x=testRatios, y=accuracies, title="DT Buy/Hold/Sell Classification Accuracy by Test Set Ratio", xlabel="Test Set Ratio", ylabel="Accuracy")
+grapher.scatter(x=testSizes, y=accuracies, title="DT Buy/Hold/Sell Classifcation Accuracy by Test Set Size", xlabel="Test Set Size", ylabel="Accuracy")
 
-plt.scatter(testRatios, accuracies)
-plt.title("Decision Tree Buy/Hold/Sell Classifcation Accuracy by Test Set Ratio")
-plt.xlabel("Test Set Ratio")
-plt.ylabel("Accuracy")
-plt.ylim((min(accuracies) - .03, max(accuracies) + .03))
-plt.show()
+# plt.plot(iterations, accuracies)
+# plt.title("Decision Tree Buy/Hold/Sell Classification Accuracy by Iteration")
+# plt.xlabel("Iteration")
+# plt.ylabel("Accuracy")
+# plt.xlim((-1,len(iterations)+1))
+# plt.ylim((min(accuracies) - .03, max(accuracies) + .03))
+# plt.show()
 
 
-plt.scatter(testSizes, accuracies)
-plt.title("Decision Tree Buy/Hold/Sell Classifcation Accuracy by Test Set Size")
-plt.xlabel("Test Set Size")
-plt.ylabel("Accuracy")
-plt.ylim((min(accuracies) - .03, max(accuracies) + .03))
-plt.show()
+# plt.scatter(testRatios, accuracies)
+# plt.title("Decision Tree Buy/Hold/Sell Classifcation Accuracy by Test Set Ratio")
+# plt.xlabel("Test Set Ratio")
+# plt.ylabel("Accuracy")
+# plt.ylim((min(accuracies) - .03, max(accuracies) + .03))
+# plt.show()
+
+
+# plt.scatter(testSizes, accuracies)
+# plt.title("Decision Tree Buy/Hold/Sell Classifcation Accuracy by Test Set Size")
+# plt.xlabel("Test Set Size")
+# plt.ylabel("Accuracy")
+# plt.ylim((min(accuracies) - .03, max(accuracies) + .03))
+# plt.show()
