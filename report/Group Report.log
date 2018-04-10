@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  10 APR 2018 02:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  10 APR 2018 03:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -322,10 +322,25 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 1024) in paragraph at lines 76--77
+\OT1/ptm/m/n/10 The re-cent at-ten-tion that the cryp-tocur-rency mar-ket has
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
@@ -335,12 +350,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--85
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
+Underfull \hbox (badness 1584) in paragraph at lines 86--87
+\OT1/ptm/m/n/10 is po-ten-tial to make sub-stan-tial cap-i-tal gains with this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--98
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
@@ -349,77 +379,203 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--98
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--105
+
+ []
+
+
+Underfull \hbox (badness 3482) in paragraph at lines 102--105
+\OT1/ptm/m/n/10 For fur-ther il-lus-tra-tion we have in-cluded an ex-am-ple
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
 <../pic/rnn.png, id=8, 462.528pt x 346.896pt>
 File: ../pic/rnn.png Graphic file (type png)
  <use ../pic/rnn.png>
-Package pdftex.def Info: ../pic/rnn.png used on input line 124.
-(pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
+Package pdftex.def Info: ../pic/rnn.png used on input line 131.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
 
-Overfull \hbox (10.47992pt too wide) in paragraph at lines 124--125
+Overfull \hbox (33.60768pt too wide) in paragraph at lines 131--132
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-<../pic/iteration.png, id=10, 462.528pt x 344.0052pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+
+ []
+
+[2 <../pic/rnn.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+<../pic/rnn_new.png, id=14, 513.41812pt x 385.44pt>
+File: ../pic/rnn_new.png Graphic file (type png)
+ <use ../pic/rnn_new.png>
+Package pdftex.def Info: ../pic/rnn_new.png used on input line 149.
+(pdftex.def)             Requested size: 282.38083pt x 211.99265pt.
+
+Overfull \hbox (38.46957pt too wide) in paragraph at lines 149--150
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+<../pic/iteration.png, id=15, 462.528pt x 344.0052pt>
 File: ../pic/iteration.png Graphic file (type png)
 
 <use ../pic/iteration.png>
-Package pdftex.def Info: ../pic/iteration.png used on input line 143.
+Package pdftex.def Info: ../pic/iteration.png used on input line 158.
 (pdftex.def)             Requested size: 254.39117pt x 189.20343pt.
 
-Overfull \hbox (10.47992pt too wide) in paragraph at lines 143--144
+Overfull \hbox (10.47992pt too wide) in paragraph at lines 158--159
 [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
- [2 <../pic/rnn.png>] <../pic/ration.png, id=15, 462.528pt x 344.0052pt>
+ []
+
+<../pic/ration.png, id=16, 462.528pt x 344.0052pt>
 File: ../pic/ration.png Graphic file (type png)
-
-<use ../pic/ration.png>
-Package pdftex.def Info: ../pic/ration.png used on input line 149.
+ <use ../pic/ration.png>
+Package pdftex.def Info: ../pic/ration.png used on input line 164.
 (pdftex.def)             Requested size: 254.39117pt x 189.20343pt.
 
-Overfull \hbox (10.47992pt too wide) in paragraph at lines 149--150
+Overfull \hbox (10.47992pt too wide) in paragraph at lines 164--165
 [][] 
  []
 
-<../pic/size.png, id=16, 462.528pt x 344.0052pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+
+ []
+
+[3 <../pic/rnn_new.png> <../pic/iteration.png> <../pic/ration.png>]
+<../pic/size.png, id=23, 462.528pt x 344.0052pt>
 File: ../pic/size.png Graphic file (type png)
  <use ../pic/size.png>
-Package pdftex.def Info: ../pic/size.png used on input line 155.
+Package pdftex.def Info: ../pic/size.png used on input line 170.
 (pdftex.def)             Requested size: 254.39117pt x 189.20343pt.
 
-Overfull \hbox (10.47992pt too wide) in paragraph at lines 155--156
+Overfull \hbox (10.47992pt too wide) in paragraph at lines 170--171
 [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 163.
-[3 <../pic/iteration.png> <../pic/ration.png> <../pic/size.png>] [4
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 178.
 
-]
-(./Group Report.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 185--186
+\OT1/ptm/m/n/10 Peo-ple are con-stantly try-ing to make mar-ket pre-dic-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 190--191
+\OT1/ptm/m/n/10 sim-i-lar-i-ties be-tween cryp-tocur-rency price pre-dic-tion a
+nd
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+[4 <../pic/size.png>] [5
+
+] (./Group Report.aux) ) 
 Here is how much of TeX's memory you used:
- 4025 strings out of 492995
- 56893 string characters out of 6132704
- 157032 words of memory out of 5000000
- 7517 multiletter control sequences out of 15000+600000
+ 4030 strings out of 492995
+ 56995 string characters out of 6132704
+ 158032 words of memory out of 5000000
+ 7521 multiletter control sequences out of 15000+600000
  17114 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,10n,40p,848b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/
-8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on "Group Report.pdf" (4 pages, 159288 bytes).
+ 39i,10n,40p,913b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/bas
+e/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on "Group Report.pdf" (5 pages, 218947 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 40 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
